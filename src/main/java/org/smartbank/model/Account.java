@@ -36,6 +36,10 @@ public abstract class Account {     //Abstract class cannot create object
     // Withdraw method
     public abstract void withdraw(double amount); // No implementation, each child must define its own rule
 
+    // Helper Method
+    protected void deductBalance(double amount) {
+        balance -= amount;
+    }
 //    public void withdraw(double amount) {
 //        if (amount <= 0) {
 //            throw new IllegalArgumentException("Please enter a positive amount");

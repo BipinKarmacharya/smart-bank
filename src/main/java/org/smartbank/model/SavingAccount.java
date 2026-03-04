@@ -15,6 +15,6 @@ public class SavingAccount extends Account {
             throw new IllegalArgumentException("Insufficient balance");
         }
 
-        balance -= amount;
+        deductBalance(amount);
     }
 }
